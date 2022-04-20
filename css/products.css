@@ -11,7 +11,9 @@
 header {
     display: inline-block;
     width: 100%;
-    margin-bottom: 15px;
+}
+.logo p {
+    margin-bottom: 0;
 }
 /* burger */
 .hamburger-menu {
@@ -32,6 +34,9 @@ header {
   cursor: pointer;
   z-index: 1;
 }
+ul {
+    margin-bottom: 0;
+}
 /* добавляем "гамбургер" */
 .menu__btn > span,
 .menu__btn > span::before,
@@ -51,6 +56,9 @@ header {
   top: 8px;
 }
 .navbar {
+    margin-bottom: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
     position: none;
     display: block;
 }
@@ -116,7 +124,7 @@ header {
     font-family: 'Didact Gothic',
         sans-serif;
     font-size: 60px;
-    font-weight: 400;
+    font-weight: 500;
     text-align: center;
     margin: 0 auto 0px auto;
     padding-top: 35px;
@@ -144,14 +152,22 @@ a {
     margin: 10px 62px;
 }
 
+.adapt_menu {
+    z-index: 1000;
+    background-color: white;
+    width: 175px;
+    height: 100%;
+    float: right;
+}
+.adapt_menu ul {
+    display: inline-block;
+    list-style: none;
+}
 
 .active {
     color: black;
     border-bottom: 2px solid black;
 }
-
-
-
 
 
 .production {
