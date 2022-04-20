@@ -316,6 +316,7 @@ i {
         font-size: 60px;
     }
     .title_quarry{
+        padding-top: 50px;
         font-weight: 700;
         font-size: 24px;
     }
@@ -413,6 +414,8 @@ i {
     }
 }
 @media(max-width:320px){
+    .conteiner {height: 500px;}
+    
     .title_sary_tash{
         width: 270px;
         font-size: 12px;
