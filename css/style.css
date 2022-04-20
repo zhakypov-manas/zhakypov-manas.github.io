@@ -166,6 +166,9 @@ a {
     color: black;
     border-bottom: 2px solid black;
 }
+.navbar {
+    margin-top: 30px;
+}
 
 /* Main img */
 .main_img {

@@ -144,7 +144,9 @@ a {
     border-bottom: 2px solid black;
 }
 
-
+.navbar {
+    margin-top: 30px;
+}
 
 .conteiner{
     background-image:url(/img/quarry/камень\ 76.jpg);

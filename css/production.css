@@ -137,7 +137,9 @@ a {
     font-weight: 400;
     margin: 10px 62px;
 }
-
+.navbar {
+    margin-top: 30px;
+}
 
 .active {
     color: black;
@@ -298,12 +300,15 @@ i {
         line-height: 79px;
     }
     .manufacture{
+        padding-top: 100px;
         margin-left: 50px;
+        padding-left: 20px;
         font-weight: 700;
         font-size: 24px;
         line-height: 28px;
     }
     .manu_text{
+        margin-left: 50px;
         padding-left: 20px;
         width: 568px;
         height: 180px;
@@ -336,6 +341,7 @@ i {
     }
     .conteiner{
         width: 100%;
+        height: 500px;
     }
     .manufacture{
         margin-left: 20px;
