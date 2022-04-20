@@ -125,6 +125,7 @@ header {
     font-weight: 400;
     text-align: center;
     margin: 0 auto 30px auto;
+    padding-top: 35px;
     display: block;
     letter-spacing: 10px;
 }
@@ -177,7 +178,7 @@ a {
 
 .nature {
     text-align: center;
-    margin-top: 150px;
+    margin-top: 30px;
 }
 
 .main_nature {
