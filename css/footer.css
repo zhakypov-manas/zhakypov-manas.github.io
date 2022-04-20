@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Raleway&display=swap');
+
+footer {
+    background-color: #222222;
+    color: white;
+    
+}
+
+.grid_row {
+    display: grid;
+}
+.elstone {
+    padding-left: 100px;
+    grid-column: 1;
+    grid-row: 1;
+    border-bottom: 2px solid white ;
+    border-right: 2px solid white ;
+}
+
+.elstone p {
+    padding-bottom: 26px;
+    font-family: 'Raleway',
+        sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.questions{
+    padding-left: 100px;
+    grid-column: 1;
+    grid-row: 2;
+    border-right: 2px solid white;
+}
+.questions p {
+    font-family: 'Raleway',
+        sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+}
+.collBack{
+    padding-left: 100px;
+    grid-column: 2;
+    grid-row: 1;
+    border-bottom: 2px solid white ;
+}
+
+.collBack p {
+    font-family: 'Raleway',
+        sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.contacts {
+    padding-left: 100px;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.contacts ul {
+    list-style: none;
+    padding: 0;
+}
+i {
+    height: 10px;
+}
+.contacts ul li {
+    margin: 22px 0;
+    display: flex;
+}
+.contacts ul li p {
+    font-family: 'Raleway',
+        sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    margin: 0;
+}
+
+i {
+    width: 12px;
+    height: 12px;
+    margin-right: 10px;
+}

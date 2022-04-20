@@ -1,0 +1,688 @@
+body {
+    margin: 0
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Raleway:wght@100&family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Raleway&display=swap');
+header {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 15px;
+}
+#dots1 {
+    display: none;
+}
+#more{
+    display: block;
+}
+#myBtn{
+    display: none;
+}
+#more1{
+    display: block;
+}
+#myBtn1{
+    display: none;
+}
+.hamburger-menu {
+    display: none;
+}
+#menu__toggle {
+    opacity: 0;
+}
+/* стилизуем кнопку */
+.menu__btn {
+    display: flex; /* используем flex для центрирования содержимого */
+    align-items: center;  /* центрируем содержимое кнопки */
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+}
+/* добавляем "гамбургер" */
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+}
+.menu__btn > span::before {
+    content: '';
+    top: -8px;
+}
+.menu__btn > span::after {
+    content: '';
+    top: 8px;
+}
+
+/* контейнер меню */
+.menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #ECEFF1;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+}
+/* элементы меню */
+.menu_item {
+    display: block;
+    padding: 12px 24px;
+    color: #333;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    text-align: left;
+}
+.menu_item_head {
+    align-items: center;
+    position: fixed;
+    top: 11px;
+    right: 225px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+    color: black;
+}
+.menu_item:hover {
+    background-color: #CFD8DC;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    right: 0;
+}
+.logo {
+    width: 100%;
+    font-family: 'Didact Gothic',
+        sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 auto 30px auto;
+    display: block;
+    letter-spacing: 10px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: #666666;
+}
+
+
+.link {
+    font-family: 'Raleway',
+        sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 10px 62px;
+}
+
+
+.active {
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+.title{
+    display: flex;
+}
+.conteiner {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.blocks{
+    display: grid;
+    margin-bottom: 86px;
+    /* grid-column-gap: 20px; */
+}
+.block-1{
+    grid-column: 1 / 2;
+    grid-row: 1;
+}
+.block-2{
+    width: 280px;
+    height: 280px;
+    margin: 0;
+    grid-column: 1;
+    grid-row: 2;
+    margin-bottom: 20px;
+}
+.block-3{
+    margin-left: -280px;
+    width: 280px;
+    height: 280px;
+    grid-column: 2;
+    grid-row: 2;
+}
+.block-4{
+    grid-column: 1 / 2;
+    grid-row: 3;
+}
+.blocks_text{
+    display: grid;
+    padding-left: 20px;
+}
+
+.valnute_title{
+    padding-top: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
+    color: #000000;
+}
+.valnute_text{
+    padding-top: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+}
+.subtile{
+    padding: 50px 0 20px 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+}
+.p{
+    white-space: pre;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    list-style: none;
+}
+.subtitle_text{
+    white-space: pre-line;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+}
+/* main */
+.our_prod{
+    background-color: #F5F5F5;
+}
+.our_text{
+    padding-bottom: 100px;
+    padding-top: 64px;
+    padding-left: 145px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.slider{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-column-gap: 20px;
+}
+.photo-1{
+    grid-column: 1;
+    grid-row: 1;
+}
+.photo-2{
+    grid-column: 2;
+    grid-row: 1;
+}
+.photo-3{
+    grid-column: 3;
+    grid-row: 1;
+}
+.photo-4{
+    margin-bottom: 100px;
+    grid-column: 1 / 2;
+    grid-row: 2;
+    width: 380px;
+    height: 400px;
+}
+.photo{
+    margin-bottom: 50px;
+}
+.photo_tile{
+    margin: 20px 0 20px 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+}
+.sloi{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+
+
+
+/* footer */
+
+footer {
+    background-color: #222222;
+    color: white;
+    height: auto;
+}
+
+.grid_row {
+    display: grid;
+    height: 100%;
+}
+.elstone {
+    padding-left: 130px;
+    grid-column: 1;
+    grid-row: 1;
+    border-bottom: 2px solid white ;
+    border-right: 2px solid white ;
+}
+
+.elstone p {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    font-family: 'Raleway',
+        sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.questions{
+    
+    padding-bottom: 100px;
+    padding-left: 100px;
+    grid-column: 1;
+    grid-row: 2;
+    border-right: 2px solid white;
+}
+.questions p {
+    padding-left: 30px;
+    padding-top: 30px;
+    font-family: 'Raleway',
+        sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+}
+.collBack{
+    padding-left: 100px;
+    grid-column: 2;
+    grid-row: 1;
+    border-bottom: 2px solid white ;
+}
+
+.collBack p {
+    padding-top: 26px;
+    font-family: 'Raleway',
+        sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.contacts {
+    padding-left: 50px;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.contacts ul {
+    margin-top: 10px;
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+}
+i {
+    height: 10px;
+}
+.contacts ul li {
+    margin: 22px 0;
+    display: flex;
+}
+.contacts ul li p {
+    font-family: 'Raleway',
+        sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    margin: 0;
+}
+
+i {
+    width: 12px;
+    height: 12px;
+    margin-right: 10px;
+}
+
+@media(max-width:1024px){
+    *{
+        margin: 0;
+    }
+    .hamburger-menu{
+        display: block;
+    }
+    .navbar{
+        display: none;
+    }
+    .block-1 img{
+        width: 380px;
+        height: 360px;
+        margin: 0;
+        grid-column: 1 / 2;
+        grid-row: 1;
+    }
+    .block-2 img , .block-3 img{
+        width: 180px;
+        height: 180px;
+    }
+    .block-4 img{
+        width: 380px;
+        height: 245px
+    }
+    .block-3{
+        width: 180px;
+        margin-left: -180px;
+    }
+    .valnute_title, .subtile{
+        
+        font-weight: 700;
+        font-size: 24px;
+    }
+    .valnute_text, .subtitle_text{
+        font-weight: 400;
+        font-size: 16px;
+    }
+    .slider{
+        grid-column-gap: 10px;
+        justify-content: center;
+    }
+    .photo img{
+        width: 300px;
+        height: 310px;
+    }
+    .photo-2{
+        grid-column: 1;
+        grid-row: 1;
+        margin-left: 330px;
+    }
+    .photo-4 img{
+        width: 620px;
+        height: 310px;
+    }
+    .our_text{
+        padding-left: 40px;
+     }
+}
+@media (max-width:768px){
+    .collBack {
+        padding-left: 50px;
+    }
+    .elstone, .questions {
+        padding-left: 20px;
+        padding-right: 140px;
+    }
+    
+    .questions p{
+        padding-left: 0;
+    }
+    .logo{
+        font-weight: 400;
+        font-size: 48px;
+    }
+    #more{
+        display: block;
+    }
+    #myBtn{
+        display: none;
+    }
+    .block-1 img{
+        width: 290px;
+        height: 340px;
+    }
+    .block-2 img, .block-3 img{
+        width: 135px;
+        height: 135px;
+    }
+    .block-2, .block-3{
+        width: 135px;
+        height: 135px;
+    }
+    .valnute_title{
+        font-weight: 700;
+        font-size: 20px;
+    }
+    .valnute_text, .p{
+        font-weight: 400;
+        font-size: 14px;
+    }
+    .our_text{
+        font-weight: 700;
+        font-size: 20px;
+        padding-left: 100px;
+    }
+    .photo img{
+        width: 230px;
+    }
+    .photo-2{
+        margin-left: 250px;
+    }
+    .photo-4 img{
+        width: 478px;
+    }
+    .our_text{
+        padding-left: 20px;
+     }
+}
+@media(max-width:426px){
+    .elstone {
+        padding-left: 15px;
+    }
+    .elstone p {
+        font-size: 16px;
+    }
+    .questions {
+        padding-left: 15px;
+        padding-right: 0px;
+    }
+    .questions p {
+        font-size: 12px;
+    }
+    .collBack {
+        padding-left: 10px;
+    }
+    .collBack p {
+        font-size: 16px;
+    }
+    .contacts {
+        padding-left: 10px;
+    }
+
+    .contacts ul li p {
+        font-size: 12px;
+    }
+    #dots1 {
+        display: block;
+    }
+    #more1{
+        display: none;
+    }
+    #myBtn1{
+        display: block;
+    }
+    .logo{
+        font-size: 40px;
+        line-height: 52px;
+    }
+    #more{
+        display: none;
+    }
+    #myBtn{
+        display: block;
+    }
+    .title{
+        display: inline-block;
+    }
+    .block-1 img{
+        width: 370px;
+    }
+    .block-2 img, .block-3 img{
+        width: 130px;
+    }
+    .block-4 img{
+        width: 130px;
+        height: 130px;
+    }
+
+    .block-1{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .block-2{
+        margin-left: -30px;
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .block-3{
+        margin-left: 105px;
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .block-4{
+        margin-left: -130px;
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .photo img{
+        width: 200px;
+    }
+    .photo-4 img{
+        width: 200px;
+    }
+    .photo-1{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .photo-2{
+        margin-left: 0;
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .photo-3{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .photo-4{
+        width: 210px;
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .our_text{
+        padding-left: 10px;
+     }
+}
+@media(max-width:375px){
+    .logo{
+        font-weight: 400;
+        font-size: 32px;
+    }
+    .block-1 img{
+        width: 280px;
+    }
+    .block-2 img, .block-3 img{
+        width: 130px;
+    }
+    .block-4{
+        display: none;
+    }
+    .block-2{
+        margin-left: 0;
+    }
+    .block-3{
+        margin-left: 180px;
+    }
+    .photo img{
+        width: 150px;
+        height: 200px;
+    }
+    .photo-4 img{
+        width: 150px;
+        height: 200px;
+    }
+    .photo-4{
+        width: 160px;
+    }
+    .photo_tile{
+        font-weight: 500;
+        font-size: 16px;
+    }
+    .sloi{
+        font-weight: 400;
+        font-size: 12px;
+    }
+}
+@media(max-width:320px){
+    .elstone {
+        padding: 0px 50px 0 0;
+    }
+    .elstone p{
+        padding-left: 15px;
+    }
+    .block-1 img{
+        width: 280px;
+        height: 160px;
+    }
+    .block-3{
+        margin-left: 140px;
+    }
+    .our_text{
+        padding: 50px 105px 50px 20px;
+    }
+    .photo img{
+        width: 130px;
+        height: 140px;
+    }
+    .photo-4 img{
+        width: 130px;
+        height: 140px;   
+    }
+    .photo-4{
+        width: 150px;
+    }
+
+}
