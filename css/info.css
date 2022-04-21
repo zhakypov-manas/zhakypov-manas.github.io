@@ -452,7 +452,7 @@ i {
         padding-left: 40px;
      }
 }
-@media (max-width:768px){
+@media (max-width:769px){
     .collBack {
         padding-left: 50px;
     }
@@ -474,13 +474,16 @@ i {
     #myBtn{
         display: none;
     }
+    .blocks {
+        margin-bottom: 470px;
+    }
     .block-1 img{
-        width: 290px;
-        height: 340px;
+        width: 100%;
+        height: 400px;
     }
     .block-2 img, .block-3 img{
-        width: 135px;
-        height: 135px;
+        width: 160px;
+        height: 160px;
     }
     .block-2, .block-3{
         width: 135px;
@@ -491,6 +494,7 @@ i {
         font-size: 20px;
     }
     .valnute_text, .p{
+        line-height: 25px;
         font-weight: 400;
         font-size: 14px;
     }
@@ -513,6 +517,9 @@ i {
      }
 }
 @media(max-width:426px){
+    .blocks {
+        margin-bottom: 50px;
+    }
     .elstone {
         padding-left: 15px;
     }
@@ -569,7 +576,7 @@ i {
     }
     .block-4 img{
         width: 130px;
-        height: 130px;
+        height: 160px;
     }
 
     .block-1{
@@ -593,9 +600,11 @@ i {
     }
     .photo img{
         width: 200px;
+        height: 250px;
     }
     .photo-4 img{
         width: 200px;
+        height: 250px;
     }
     .photo-1{
         grid-column: 1;
@@ -616,16 +625,17 @@ i {
         grid-row: 2;
     }
     .our_text{
-        padding-left: 10px;
+        padding-left: 110px;
      }
 }
-@media(max-width:375px){
+@media(max-width:376px){
     .logo{
         font-weight: 400;
         font-size: 32px;
     }
     .block-1 img{
         width: 280px;
+        height: 260px;
     }
     .block-2 img, .block-3 img{
         width: 130px;
@@ -640,12 +650,12 @@ i {
         margin-left: 180px;
     }
     .photo img{
-        width: 150px;
-        height: 200px;
+        width: 160px;
+        height: 160px;
     }
     .photo-4 img{
-        width: 150px;
-        height: 200px;
+        width: 160px;
+        height: 160px;
     }
     .photo-4{
         width: 160px;
@@ -658,8 +668,17 @@ i {
         font-weight: 400;
         font-size: 12px;
     }
+    .our_prod {
+        height: 900px;
+    }
+    .our_text {
+        padding-left: 80px;
+    }
 }
 @media(max-width:320px){
+    .our_prod {
+        height: 800px;
+    }
     .elstone {
         padding: 0px 50px 0 0;
     }
@@ -668,23 +687,24 @@ i {
     }
     .block-1 img{
         width: 280px;
-        height: 160px;
+        height: 210px;
     }
     .block-3{
         margin-left: 140px;
     }
     .our_text{
-        padding: 50px 105px 50px 20px;
+        padding: 50px 0px 50px 55px;
     }
     .photo img{
-        width: 130px;
-        height: 140px;
+        width: 145px;
+        height: 155px;
     }
     .photo-4 img{
-        width: 130px;
-        height: 140px;   
+        width: 145px;
+        height: 155px;   
     }
     .photo-4{
+        margin-bottom: 0px;
         width: 150px;
     }
 

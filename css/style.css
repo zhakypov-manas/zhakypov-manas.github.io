@@ -194,6 +194,7 @@ a {
 }
 
 .under_main_nature {
+    line-height: 30px;
     font-family: 'Raleway',
         sans-serif;
     font-size: 20px;
@@ -696,13 +697,13 @@ i {
         font-size: 12px;
     }
     .collBack {
-        padding-left: 10px;
+        padding-left: 3px;
     }
     .collBack p {
         font-size: 16px;
     }
     .contacts {
-        padding-left: 10px;
+        padding-left: 3px;
     }
 
     .contacts ul li p {
@@ -770,7 +771,7 @@ i {
         margin-left: 205px;
     }
     .kamni5 {
-        margin-left: 20px;
+        margin-left: 27px;
     }
     .production_row{
         grid-row-gap: 30px;

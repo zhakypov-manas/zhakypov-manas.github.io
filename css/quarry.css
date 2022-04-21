@@ -150,6 +150,8 @@ a {
 
 .conteiner{
     background-image:url(/img/quarry/камень\ 76.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
     width: 100%;
     height: 700px;
 }
@@ -353,7 +355,13 @@ i {
         padding-left: 0;
     }
 }
-@media(max-width:425px){
+@media(max-width:426px){
+    .top {
+        padding-bottom: 20px;
+    }
+    .middle {
+        padding-bottom: 20px;
+    }
     .logo{
         font-weight: 400;
         font-size: 40px;
@@ -399,7 +407,7 @@ i {
         font-size: 12px;
     }
 }
-@media(max-width:375px){
+@media(max-width:376px){
     .logo{
         font-weight: 400;
         font-size: 40px;
@@ -416,6 +424,12 @@ i {
     }
 }
 @media(max-width:320px){
+    .top {
+        padding-bottom: 15px;
+    }
+    .middle {
+        padding-bottom: 15px;
+    }
     .conteiner {height: 500px;}
     
     .title_sary_tash{

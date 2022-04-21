@@ -398,6 +398,12 @@ i {
         font-size: 12px;
         line-height: 30px;
     }
+    .top {
+        padding-bottom: 25px;
+    }
+    .middle {
+        padding-bottom: 25px;
+    }
     .br1{
         display: none;
     }
@@ -433,6 +439,15 @@ i {
     .contacts ul li p {
         font-size: 12px;
     }
+}
+@media screen and (max-width:376px){
+    .top {
+        padding-bottom: 15px;
+    }
+    .middle {
+        padding-bottom: 15px;
+    }
+    
 }
 @media(max-width:320px){
     .logo{
