@@ -791,6 +791,27 @@ i {
 }
 
 @media screen and (max-width:321px){
+    .techno {
+        margin-top: 0;
+    }
+    .rock_img {
+        background-image: url(/img/rock_main_img.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 200px;
+    }
+    .main_nature {
+        font-size: 30px;
+    }
+    .rock_text {
+        font-size: 30xp;
+        padding-top: 250px;
+    }
+    .rock_description {
+        line-height: 26px;
+        font-size: 12px;
+    }
     .logo {
         font-size: 32px;
     }
@@ -798,6 +819,8 @@ i {
         font-size: 14px;
     }
     .nature_description {
+        height: 120px;
+        line-height: 26px;
         font-size: 12px;
     }
     .kamni1, .kamni3, .kamni5{
@@ -810,7 +833,7 @@ i {
         margin-left: 25px;
     }
     .prod2 {
-        padding-top: 130px;
+        font-size: 30px;
     }
     .elstone {
         padding: 0px 50px 0 0;
@@ -820,5 +843,8 @@ i {
     }
     #myBtn {
         margin-left: 200px;
+    }
+    .our {
+        padding-top: 0;
     }
 }
