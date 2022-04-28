@@ -216,6 +216,7 @@ a {
 .our{
     display: grid;
     grid-column-gap: 20px;
+    grid-row-gap: 50px;
 }
 .kamni-1{
     grid-column: 1;
