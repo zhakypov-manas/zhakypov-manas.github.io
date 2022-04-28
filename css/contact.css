@@ -516,6 +516,9 @@ i {
     } 
 }
 @media screen and (max-width:321px){
+    .info {
+        width: auto;
+    }
     .logo {
         font-size: 32px;
     }

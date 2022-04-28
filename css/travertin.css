@@ -202,7 +202,9 @@ a {
 .photo_br_375 {
     display: block;
 }
-
+.px321 {
+    display: none;
+}
 .manufacturing{
     width: 100%;
     background: #F5F5F5;
@@ -417,6 +419,9 @@ i {
 }
 
 @media screen and (max-width:1025px){
+    #more {
+        display: inline;
+    }
     .manufacturing_row {
         margin-left: 50px;
     }
@@ -446,12 +451,23 @@ i {
 }
 
 @media screen and (max-width:769px){
+    .description_text {
+        height: auto;
+        margin: 90px 0;
+        font-size: 14px;
+        line-height: 25px;
+    }
     .main {
+        font-size: 35px;
         padding-left: 15px;
+    }
+    img {
+        height: 300px;
     }
     .main_text {
         width: 750px;
         padding-left: 15px;
+        font-size: 20px;
     }
     .manufacturing_row {
         margin: 0 auto 90px auto;
@@ -521,6 +537,18 @@ i {
 }
 
 @media screen and (max-width:426px){
+    img {
+        height: 250px;
+    }
+    .main {
+        padding-top: 100px;
+        font-size: 20px;
+        display: block;
+    }
+    .main_text {
+        width: 400px;
+        font-size: 12px;
+    }
     .logo {
         font-size: 40px;
     }
@@ -599,10 +627,7 @@ i {
         display: block;
     }
     .subheader {
-        height: 500px;
-    }
-    .main_text, .main {
-        display: none;
+        height: 300px;
     }
     .elstone {
         padding-left: 15px;
@@ -636,9 +661,20 @@ i {
 }
 
 @media screen and (max-width:376px){
-    
+    .manufacturing_title{
+        padding-top: 80px;
+    }
+    .description_text {
+        margin: 60px 0;
+    }
+    .main_text {
+        width: auto;
+    }
     .photo{
-        width: 179px;
+        width: 175px;
+    }
+    img {
+        height: 230px;
     }
     .photo_br_375 {
         display: block;
@@ -649,6 +685,12 @@ i {
 }
 
 @media screen and (max-width:321px){
+    .px321 {
+        display: inline;
+    }
+    img {
+        height: 210px;
+    }
     .logo {
         font-size: 32px;
     }
@@ -666,17 +708,17 @@ i {
     .photo_title {
         font-family: 'Raleway',
         sans-serif;
-        font-weight: 500;
-        font-size: 14px;
+        font-weight: 600;
+        font-size: 18px;
     }
     .photo_text {
         font-family: 'Raleway',
         sans-serif;
         font-weight: 400;
-        font-size: 12px;
+        font-size: 13px;
     }
     .photo {
-        width: 140px;
+        width: 150px;
     }
     .elstone {
         padding: 0px 50px 0 0;
